@@ -115,10 +115,10 @@ class AssortedTest {
         List<Integer> listFour = new ArrayList<>(Arrays.asList(2));
 
         List<Integer> result2 = Assorted.subtractList(listThree, listFour);
-
         assertTrue(result2.size() == 2);
         assertTrue(result2.get(0) == 1);
         assertTrue(result2.get(1) == 3);
+
 
     }
 
@@ -135,7 +135,7 @@ class AssortedTest {
 
         for (int i = 0; i < list.size(); i ++) {
 
-            if (i%2 == 0) {
+            if (list.get(i)%2 == 0) {
                 assertTrue(list.get(i) == listSortedOdd.get(i));
             }
         }
